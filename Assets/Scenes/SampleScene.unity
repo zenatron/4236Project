@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 320055408}
   - component: {fileID: 320055407}
   - component: {fileID: 320055406}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ Transform:
   m_GameObject: {fileID: 320055405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.39, y: -2.1, z: 0}
+  m_LocalPosition: {x: 9.41, y: -2.06, z: 0}
   m_LocalScale: {x: 4.8949122, y: 4.0105624, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 402833047}
   - component: {fileID: 402833046}
   - component: {fileID: 402833048}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,8 +590,8 @@ GameObject:
   m_Component:
   - component: {fileID: 800965089}
   - component: {fileID: 800965091}
-  - component: {fileID: 800965092}
   - component: {fileID: 800965093}
+  - component: {fileID: 800965092}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -630,8 +630,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.5
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 3.5
+  m_Material: {fileID: 6200000, guid: e0c676955a5d4eb4692f911d6c269eee, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -654,9 +654,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8549b85131920894897c159b1249564b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 53836964}
-  moveSpeed: 5
-  jumpHeight: 7
+  moveSpeed: 8
+  jumpForce: 12
+  groundCheckDistance: 1.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!70 &800965093
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
