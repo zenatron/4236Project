@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 53836962}
   - component: {fileID: 53836963}
   - component: {fileID: 53836964}
+  - component: {fileID: 53836965}
   m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
@@ -149,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 53836961}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.44, y: 0.05, z: 0}
+  m_LocalPosition: {x: 0.609, y: 0.148, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -228,6 +229,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &53836965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53836961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5794cc89af4d3ff47bd222e553743917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &320055405
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +365,7 @@ Transform:
   m_GameObject: {fileID: 320055405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.41, y: -2.06, z: 0}
+  m_LocalPosition: {x: 11.7, y: -5.81, z: 0}
   m_LocalScale: {x: 4.8949122, y: 4.0105624, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -437,8 +450,8 @@ Transform:
   m_GameObject: {fileID: 402833045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.82, y: -3.6, z: 0}
-  m_LocalScale: {x: 15.536026, y: 1, z: 1}
+  m_LocalPosition: {x: -2.21, y: -7.37, z: 0}
+  m_LocalScale: {x: 22.915638, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -549,7 +562,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -608,7 +621,7 @@ Transform:
   m_GameObject: {fileID: 800965087}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.95, y: -1.756, z: 0}
+  m_LocalPosition: {x: -0.17, y: -5.654, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -656,6 +669,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 8
   jumpForce: 12
+  dashSpeed: 20
+  dashDuration: 0.25
+  dashCooldown: 1.5
+  comboTimer: 1
   groundCheckDistance: 1.4
   groundMask:
     serializedVersion: 2
@@ -692,8 +709,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014277518, y: -0.22844097}
-  m_Size: {x: 0.8854941, y: 2.1279273}
+  m_Offset: {x: 0.15031683, y: -0.13982987}
+  m_Size: {x: 0.80063367, y: 2.0766892}
   m_Direction: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
